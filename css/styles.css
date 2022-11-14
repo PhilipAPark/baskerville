@@ -1,0 +1,114 @@
+/*-- CSS Reset --*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1rem;
+}
+
+/*-- CSS Start --*/
+
+body {
+  font-family: baskerville-display-pt, serif;
+  background: #f7f7f7;
+  color: #333333;
+}
+
+header,
+section,
+footer {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+section,
+header {
+  margin-bottom: 3em;
+}
+
+p,
+blockquote {
+  padding: 1em 0;
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  color: #a34f22;
+}
+
+h1 {
+  font-size: 4.742rem;
+  margin-top: 8rem;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 1.999rem;
+  margin: 3rem 0 0 0;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.68rem;
+  color: #a34f22;
+  hanging-punctuation: first;
+  text-indent: 0.7rem;
+}
+
+blockquote cite {
+  font-style: normal;
+  font-size: 1.067rem;
+  color: #333333;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding-bottom: 2em;
+}
+
+/*--  Nav Bar Start --*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #a34f22;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+}
+
+nav ul {
+  text-align: center;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+  background-color: none;
+}
+
+nav a {
+  color: #f7f7f7;
+  transition-duration: 200ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: none;
+  font-size: 15px;
+  color: #ff5900;
+  transition-duration: 200ms;
+}
