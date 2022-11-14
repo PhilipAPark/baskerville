@@ -1,4 +1,15 @@
-.body {
+body {
   margin: 0px;
   padding: 0px;
+  font-family: Helvetica;
+}
+
+.mainbody {
+  margin: 0px;
+  padding: 5% 20% 5% 20%;
+  justify-content: center;
+  background-color: white;
+}
+
+#title {
 }
