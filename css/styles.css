@@ -17,8 +17,7 @@ body {
 }
 
 header,
-section,
-footer {
+section {
   width: 80%;
   max-width: 700px;
   margin: auto;
@@ -27,6 +26,7 @@ footer {
 section,
 header {
   margin-bottom: 3em;
+  margin-top: 3em;
 }
 
 p,
@@ -37,7 +37,7 @@ blockquote {
 
 h1,
 h2 {
-  color: #a34f22;
+  color: #0085dd;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h2 {
 blockquote {
   font-style: italic;
   font-size: 1.68rem;
-  color: #a34f22;
+  color: #0085dd;
   hanging-punctuation: first;
   text-indent: 0.7rem;
 }
@@ -66,9 +66,65 @@ blockquote cite {
 }
 
 footer {
+  background: #0085dd;
   text-align: center;
-  font-size: 0.8em;
-  padding-bottom: 2em;
+  font-size: 0.75rem;
+  color: #f7f7f7;
+  padding: 4em 0 3em 0;
+}
+
+footer p {
+  margin: auto;
+  width: 50%;
+}
+
+.connections {
+  position: relative;
+  margin: 0 auto;
+}
+
+.connections ul {
+  margin: 0;
+  padding: 0;
+}
+
+.connections li {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.connections a:link {
+  border-bottom: none;
+}
+
+.connections img,
+.connections svg {
+  border: none;
+}
+
+.connections a:hover img,
+.connections a:hover svg {
+  border-bottom: none;
+}
+
+.connections svg {
+  margin: 1em auto;
+}
+
+.connections a:hover svg path {
+  fill: #ff8635;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .connections a:hover svg path {
+  fill: ff8635;
+  transition: all 0.2s ease-in-out;
+}
+
+.leader {
+  text-transform: uppercase;
 }
 
 /*--  Nav Bar Start --*/
@@ -79,7 +135,7 @@ nav {
   left: 0;
   margin: 0;
   width: 100%;
-  background-color: #a34f22;
+  background-color: #0085dd;
   padding: 1rem 0;
   font-size: 0.75rem;
 }
@@ -87,7 +143,6 @@ nav {
 nav ul {
   text-align: center;
   text-transform: uppercase;
-
   letter-spacing: 1px;
 }
 
@@ -107,8 +162,69 @@ a {
 }
 
 nav a:hover {
+  font-weight: bold;
   border-bottom: none;
   font-size: 15px;
-  color: #ff5900;
   transition-duration: 200ms;
+}
+
+/*-- CSS Table --*/
+
+table {
+  margin: auto;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+caption {
+  margin: 1.5em 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  background-color: #0085dd;
+}
+
+tr,
+td {
+  padding: 0.4em;
+  color: #333333;
+}
+
+table,
+td {
+  background-color: #99d6ff;
+  border: 2px solid #f7f7f7;
+}
+
+tr,
+th {
+  padding: 0.4em;
+  color: #f7f7f7;
+  font-weight: bold;
+}
+
+/*-- CSS Images --*/
+
+img {
+  display: block;
+  margin: 3em 0;
+  width: 100%;
+}
+
+/*-- CSS Hr --*/
+
+hr {
+  margin: auto;
+  max-width: 700px;
+  height: 2px;
+  background-color: #0085dd;
+  border: 0 none;
 }
